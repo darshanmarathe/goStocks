@@ -28,7 +28,7 @@ reAsk:
 	text := ReadString(msg)
 	i, err := strconv.Atoi(text)
 	if err != nil {
-		fmt.Printf("Given value is not a valid int %q", text)
+		fmt.Printf("Given value is not a valid int %q ", text)
 		goto reAsk
 	}
 	return i
@@ -40,7 +40,7 @@ reAsk:
 	text := ReadString(msg)
 	i, err := strconv.ParseFloat(text, 64)
 	if err != nil {
-		fmt.Printf("Given value is not a valid float %q", text)
+		fmt.Printf("Given value is not a valid float %q ", text)
 		goto reAsk
 	}
 	return i

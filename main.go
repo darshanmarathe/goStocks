@@ -57,7 +57,7 @@ func Menu() int {
 
 	fmt.Println("Press 1 to record purches of stock")
 	fmt.Println("Press 2 to record sell of stock")
-	fmt.Println("Press 3 to list all the transactions for stock")
+	fmt.Println("Press 3 to print a stock and show all the transactions")
 	fmt.Println("Press 4 to list all stocks")
 	fmt.Println("Press 5 to stocks order by date")
 	fmt.Println("Press 6 to exit")

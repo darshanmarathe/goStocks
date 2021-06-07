@@ -184,51 +184,5 @@
     "AuditTrail": null
    }
   ]
- },
- {
-  "Symbol": "TEMP",
-  "BuyPrice": 10.5,
-  "BuyValue": 210,
-  "BuyDate": "2021-06-07T19:47:54.3586764+05:30",
-  "Qty": 20,
-  "SellPrice": 0,
-  "SellValue": 0,
-  "SellDate": "0001-01-01T00:00:00Z",
-  "GrossProfite": 0,
-  "ProfitBooked": 0,
-  "IsIntraDay": false,
-  "IsSold": false,
-  "AuditTrail": [
-   {
-    "Symbol": "TEMP",
-    "BuyPrice": 10,
-    "BuyValue": 100,
-    "BuyDate": "2021-06-07T19:47:54.3586764+05:30",
-    "Qty": 10,
-    "SellPrice": 0,
-    "SellValue": 0,
-    "SellDate": "0001-01-01T00:00:00Z",
-    "GrossProfite": 0,
-    "ProfitBooked": 0,
-    "IsIntraDay": false,
-    "IsSold": false,
-    "AuditTrail": null
-   },
-   {
-    "Symbol": "TEMP",
-    "BuyPrice": 11,
-    "BuyValue": 110,
-    "BuyDate": "2021-06-07T19:49:38.1506767+05:30",
-    "Qty": 10,
-    "SellPrice": 0,
-    "SellValue": 0,
-    "SellDate": "0001-01-01T00:00:00Z",
-    "GrossProfite": 0,
-    "ProfitBooked": 0,
-    "IsIntraDay": false,
-    "IsSold": false,
-    "AuditTrail": null
-   }
-  ]
  }
 ]

@@ -32,8 +32,7 @@ func AddStock(stocks []models.Stock) []models.Stock {
 	symbol := cli.ReadString("Enter the stock symbol to add:")
 	qty := cli.ReadInt("Enter the Qty:")
 	buyPrice := cli.ReadFloat("Buying Price:")
-	fmt.Println("symbol", symbol, "qty", qty, "buyPrice", buyPrice)
-
+	symbol = strings.ToUpper(symbol)
 	nStock, index, err := GetStock(stocks, symbol)
 	if err != nil {
 		stock := &models.Stock{
