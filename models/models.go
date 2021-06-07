@@ -17,6 +17,7 @@ type Stock struct {
 	ProfitBooked float64   `header:"ProfitBooked"`
 	IsIntraDay   bool      `header:"IsIntraDay"`
 	IsSold       bool      `header:"IsSold"`
+	AuditTrail   []Stock
 }
 
 type StocksType []Stock

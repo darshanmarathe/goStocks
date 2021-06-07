@@ -40,6 +40,7 @@ func AddStock(stocks []models.Stock) []models.Stock {
 		BuyDate:  time.Now(),
 	}
 
+	stock.AuditTrail = append(stock.AuditTrail, *stock)
 	stocks = append(stocks, *stock)
 	fmt.Println("symbol is", symbol, " added.")
 	defer files.WriteFile(stocks, datafile)

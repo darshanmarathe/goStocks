@@ -1,1 +1,8 @@
-read JSON from file 
+Add AuditTrail 
+ReAdd
+ReAdd And Set Auditrail 
+Sell 
+ReSell
+ReSell And Set Auiditrail
+ShowAuditTrail 
+ShowCurrentPrices
