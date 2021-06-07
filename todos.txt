@@ -1,6 +1,7 @@
-Add AuditTrail 
-ReAdd
-ReAdd And Set Auditrail 
+Add AuditTrail Done
+ReAdd Done
+ReAdd And Set Auditrail Done 
+Print Auditrail
 Sell 
 ReSell
 ReSell And Set Auiditrail

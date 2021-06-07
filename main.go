@@ -24,6 +24,7 @@ func Boot() {
 	stocks = svc.ReadStocks()
 	fmt.Println("(", len(stocks), ") stocks")
 
+reAsk:
 	command := Menu()
 	switch command {
 	case 1:
@@ -33,15 +34,21 @@ func Boot() {
 	case 2:
 		stocks = svc.SellStock(stocks)
 		Boot()
+	case 3:
+		svc.PrintTranctions(stocks)
+		Boot()
 	case 4:
 		cli.Clear()
 		svc.PrintStocks(stocks)
 		cli.ReadKey()
 		Boot()
 	case 6:
-	case 0:
 		fmt.Println("*******************")
 		fmt.Println("Shutting down.....")
+	case 0:
+		cli.Clear()
+		fmt.Println("Input not understood try again.")
+		goto reAsk
 	}
 
 }
@@ -50,7 +57,7 @@ func Menu() int {
 
 	fmt.Println("Press 1 to record purches of stock")
 	fmt.Println("Press 2 to record sell of stock")
-	fmt.Println("Press 3 to list all holdings stocks")
+	fmt.Println("Press 3 to list all the transactions for stock")
 	fmt.Println("Press 4 to list all stocks")
 	fmt.Println("Press 5 to stocks order by date")
 	fmt.Println("Press 6 to exit")

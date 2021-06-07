@@ -2,6 +2,7 @@ package cli
 
 import (
 	"bufio"
+	"encoding/json"
 	"fmt"
 	"os"
 	"strconv"
@@ -52,4 +53,9 @@ func ReadKey() {
 
 func Clear() {
 	fmt.Print("\033[H\033[2J")
+}
+
+func Stringfy(data interface{}) {
+	str, _ := json.MarshalIndent(data, "", " ")
+	fmt.Println(string(str))
 }

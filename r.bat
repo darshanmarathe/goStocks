@@ -1,1 +1,1 @@
-nodemon --ext go -x "go run . FOO BAR BAAZ"
+nodemon --ext go -x "go run ."
