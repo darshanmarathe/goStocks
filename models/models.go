@@ -5,19 +5,23 @@ import (
 )
 
 type Stock struct {
-	Symbol       string    `header:"Symbol"`
-	BuyPrice     float64   `header:"BuyPrice"`
-	BuyValue     float64   `header:"BuyValue"`
-	BuyDate      time.Time `header:"BuyDate"`
-	Qty          int       `header:"Qty"`
-	SellPrice    float64   `header:"SellPrice"`
-	SellValue    float64   `header:"SellValue"`
-	SellDate     time.Time `header:"SellDate"`
-	GrossProfite float64   `header:"GrossProfite"`
-	ProfitBooked float64   `header:"ProfitBooked"`
-	IsIntraDay   bool      `header:"IsIntraDay"`
-	IsSold       bool      `header:"IsSold"`
+	Symbol      string  `header:"Symbol"`
+	BuyPrice    float64 `header:"BuyPrice"`
+	BuyValue    float64 `header:"BuyValue"`
+	BuyDate     time.Time
+	BuyDateStr  string  `header:"BuyDate"`
+	Qty         int     `header:"Qty"`
+	SellPrice   float64 `header:"SellPrice"`
+	SellValue   float64 `header:"SellValue"`
+	SellDate    time.Time
+	SellDateStr string `header:"SellDate"`
+	//	GrossProfite float64
+	ProfitBooked float64 `header:"ProfitBooked"`
+	TransType    string  `header:"TransType"`
+	IsIntraDay   bool    `header:"IsIntraDay"`
+	IsSold       bool    `header:"IsSold"`
 	AuditTrail   []Stock
+	Pnl          float64 `header:"P&L"`
 }
 
 type StocksType []Stock

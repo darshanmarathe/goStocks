@@ -3,9 +3,11 @@ package files
 import (
 	"encoding/json"
 	"fmt"
+	"io/fs"
 	"io/ioutil"
 	"os"
 
+	"github.com/darshanmarathe/goStocks/cli"
 	"github.com/darshanmarathe/goStocks/models"
 )
 
@@ -33,7 +35,12 @@ func ReadFile(filename string) []models.Stock {
 }
 
 func WriteFile(data []models.Stock, filename string) {
-	file, _ := json.MarshalIndent(data, "", " ")
-
-	_ = ioutil.WriteFile(filename, file, 0644)
+	fmt.Println(data)
+	cli.ReadKey()
+	file, err := json.MarshalIndent(data, "", " ")
+	if err != nil {
+		fmt.Println("failed to parse the stocks", err)
+		panic(err)
+	}
+	_ = ioutil.WriteFile(filename, file, fs.ModeAppend)
 }

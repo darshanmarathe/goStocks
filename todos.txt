@@ -1,9 +1,10 @@
 Add AuditTrail Done
 ReAdd Done
 ReAdd And Set Auditrail Done 
-Print Auditrail
-Sell 
-ReSell
-ReSell And Set Auiditrail
-ShowAuditTrail 
+Print Auditrail Done
+Sell Done
+ReSell Done
+P&L Done
+ShowAuditTrail Done
+ShowProfit&LossPrices
 ShowCurrentPrices
