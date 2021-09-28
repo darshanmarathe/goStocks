@@ -3,6 +3,7 @@ package svc
 import (
 	"errors"
 	"fmt"
+	"math"
 	"os"
 	"sort"
 	"strings"
@@ -147,6 +148,26 @@ func SellStock(stocks []models.Stock) []models.Stock {
 
 	return stocks
 
+}
+
+func ShowPnL() {
+	price := cli.ReadFloat("Enter the price of stock")
+	fmt.Println("price given", price)
+	for i := 1; i < 11; i++ {
+		percent := float64(i) / float64(100)
+		growth := (price * percent)
+		valuedPrice := price + growth
+
+		fmt.Println("for %", i, "you can score ", Round(valuedPrice))
+	}
+
+}
+
+func Round(input float64) float64 {
+	if input < 0 {
+		return math.Ceil(input - 0.3)
+	}
+	return math.Floor(input + 0.3)
 }
 
 func PrintTranctions(stocks []models.Stock) {

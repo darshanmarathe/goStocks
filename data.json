@@ -167,14 +167,14 @@
  {
   "Symbol": "TIMETECHNO",
   "BuyPrice": 88,
-  "BuyValue": 2640,
+  "BuyValue": 0,
   "BuyDate": "2021-06-22T10:10:21.207049+05:30",
   "BuyDateStr": "06 Jun 2021",
-  "Qty": 30,
-  "SellPrice": 0,
-  "SellValue": 0,
-  "SellDate": "0001-01-01T00:00:00Z",
-  "SellDateStr": "",
+  "Qty": 0,
+  "SellPrice": 94,
+  "SellValue": 2820,
+  "SellDate": "2021-06-30T11:58:11.2589813+05:30",
+  "SellDateStr": "06 Jun 2021",
   "ProfitBooked": 0,
   "TransType": "BUY",
   "IsIntraDay": false,
@@ -197,9 +197,27 @@
     "IsSold": false,
     "AuditTrail": null,
     "Pnl": 0
+   },
+   {
+    "Symbol": "TIMETECHNO",
+    "BuyPrice": 0,
+    "BuyValue": 0,
+    "BuyDate": "0001-01-01T00:00:00Z",
+    "BuyDateStr": "",
+    "Qty": 30,
+    "SellPrice": 94,
+    "SellValue": 2820,
+    "SellDate": "2021-06-30T11:58:11.2589813+05:30",
+    "SellDateStr": "06 Jun 2021",
+    "ProfitBooked": 0,
+    "TransType": "SELL",
+    "IsIntraDay": false,
+    "IsSold": false,
+    "AuditTrail": null,
+    "Pnl": 0
    }
   ],
-  "Pnl": 0
+  "Pnl": 180
  },
  {
   "Symbol": "HINDCOPPER",
